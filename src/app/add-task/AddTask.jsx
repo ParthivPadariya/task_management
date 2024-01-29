@@ -16,7 +16,7 @@ const AddTask =  () => {
   // console.log("This is a Client Component");// print in browser console because client component
   const [task, setTask] = useState({
     title: "",
-    content: "",
+    content: "Hello, ",
     status: "none",
     userId: "",
   });
