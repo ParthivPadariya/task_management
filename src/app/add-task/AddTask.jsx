@@ -16,7 +16,7 @@ const AddTask =  () => {
   // console.log("This is a Client Component");// print in browser console because client component
   const [task, setTask] = useState({
     title: "",
-    content: "Hello, ",
+    content: "",
     status: "none",
     userId: "",
   });
@@ -92,6 +92,7 @@ const AddTask =  () => {
                     content: event.target.value,
                   });
                 }}
+                defaultValue="Hello, "
                 value={task.content}  type="text" id="task_content" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Content" required/>
             </div>
 

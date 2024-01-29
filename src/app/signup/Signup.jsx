@@ -13,7 +13,7 @@ const Signup = () => {
     name: "",
     email:"",
     password:"",
-    about:"Hii, ",
+    about:"",
     profileURL:"https://media.istockphoto.com/id/1223671392/vector/default-profile-picture-avatar-photo-placeholder-vector-illustration.jpg?s=612x612&w=0&k=20&c=s0aTdmT5aU6b8ot7VKm11DeID6NctRCpB755rA1BIP0=",
   })
 
@@ -93,7 +93,7 @@ const Signup = () => {
                 onChange={(e) => setUser({...user, about:e.target.value})}
                 value={user.about}
                 type="text" 
-                
+                defaultValue="I'm"
                 name="user_about" id="user_about" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="About" required > </textarea>
             </div>
 
